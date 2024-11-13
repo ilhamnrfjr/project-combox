@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about-container {
+    margin-top: 5px; /* Mengurangi jarak atas */
+    padding: 20px 0; /* Tambahkan padding untuk kontainer about */
+    text-align: center; /* Memusatkan konten di dalam kontainer */
+}
+
+.centered-image {
+    max-width: 100%; /* Gambar tidak melebihi lebar kontainer */
+    height: auto; /* Tinggi gambar otomatis untuk menjaga proporsi */
+}
+
+nav {
+    position: fixed; /* Tetapkan posisi navbar menjadi fixed */
+    top: 0; /* Menjaga navbar di atas */
+    left: 0; /* Menjaga navbar di kiri */
+    right: 0; /* Menjaga navbar di kanan */
+    z-index: 1000; /* Memastikan navbar di atas elemen lain */
+}
+
+.min-h-full {
+    padding-top: 4rem; /* Memberikan padding atas untuk menghindari konten yang terpotong di belakang navbar */
+}
+
+.swiper {
+    border-radius: 15px; /* Mengatur radius sudut carousel */
+    overflow: hidden; /* Menyembunyikan bagian luar radius */
+    background-color: #f0f0f0; /* Tambahkan latar belakang jika diperlukan */
+}
+
+.swiper-slide {
+    display: flex; /* Memastikan konten di dalam slide terpusat */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    border-radius: 15px; /* Menyesuaikan sudut pada setiap slide */
+}
+
+/* Mengatur gambar di dalam slide */
+.swiper-slide img {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 15px; /* Menyesuaikan sudut gambar agar cocok dengan slide */
+    object-fit: cover;
+}
+/* >>>>>>> Tabnine >>>>>>>// {"conversationId":"9c45be8f-4197-478a-a563-d3ae0c6b8b7e","source":"instruct"} */
+
