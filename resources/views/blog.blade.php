@@ -44,9 +44,9 @@
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 mt-4 md:mt-0 flex-grow justify-center">
-                <a href="/" class="text-sm md:text-base hover:text-red-600 font-bold">HOME</a>
+                <a href="/" class="text-sm md:text-base hover:text-red-600">HOME</a>
                 <a href="/menu" class="text-sm md:text-base hover:text-red-600">MENU</a>
-                <a href="/blog" class="text-sm md:text-base hover:text-red-600">BLOG</a>
+                <a href="/blog" class="text-sm md:text-base hover:text-red-600 font-bold">BLOG</a>
                 <a href="/about" class="text-sm md:text-base hover:text-red-600">ABOUT</a>
                 <a href="/contact" class="text-sm md:text-base hover:text-red-600">CONTACT</a>
             </div>

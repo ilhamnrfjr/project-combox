@@ -8,32 +8,42 @@
 </head>
 <body class="bg-gray-100">
     <!-- Sidebar -->
-    <div class="flex h-screen">
-        <div class="w-64 bg-gray-50 text-white p-4 flex flex-col justify-between rounded-tr-lg rounded-br-lg">
-            <div class="flex flex-col items-center justify-center">
-                <a href="/dashboard">
-                    <img class="w-32 md:w-40" src="{{ asset('img/logo.jpg') }}" alt="Your Company">
-                </a>
-                <div class="mt-6 flex flex-col items-center">
-                    <img class="w-24 h-24 rounded-full border-4 border-black" src="{{ asset('img/admin.png') }}" alt="Admin Photo">
-                    <p class="mt-2 font-semibold text-black">Shiddiq Harya</p>
-                </div>
-                <ul class="mt-8 w-full">
-                    <li class="relative">
-                        <a href="#" id="menu-toggle" class="block w-full py-2 px-4 font-semibold text-black bg-yellow-400 rounded">Menu</a>
-                        <ul class="hidden mt-2 space-y-1 ml-4" id="menu-submenu">
-                            <li><a href="{{ route('menus.DashboardBestSeller') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Best Seller</a></li>
-                            <li><a href="{{ route('menus.DashboardMainCourse') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Main Course</a></li>
-                            <li><a href="{{ route('menus.DashboardSnack') }}" class="block py-1 px-4 font-semibold text-gray-700 bg-yellow-200 rounded">Snack</a></li>
-                            <li><a href="{{ route('menus.DashboardDrink') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Drink</a></li>
-                        </ul>
-                    </li>
-                </ul>
+<div class="flex h-screen">
+    <div class="w-64 bg-gray-50 text-white p-4 flex flex-col justify-between rounded-tr-lg rounded-br-lg">
+        <div class="flex flex-col items-center justify-center">
+            <a href="/dashboard">
+                <img class="w-32 md:w-40" src="{{ asset('img/logo.jpg') }}" alt="Your Company">
+            </a>
+            <div class="mt-6 flex flex-col items-center">
+                <img class="w-24 h-24 rounded-full border-4 border-black" src="{{ asset('img/admin.png') }}" alt="Admin Photo">
+                <p class="mt-2 font-semibold text-black">Shiddiq Harya</p>
             </div>
-            <div>
-                <li><a href="/logout" class="block w-full py-2 px-4 font-semibold text-black hover:bg-yellow-400 rounded">Logout</a></li>
-            </div>
+            <ul class="mt-8 w-full">
+                <!-- Existing Menu Item: Event -->
+                <li class="relative">
+                    <a href="#" id="menu-toggle" class="block w-full py-2 px-4 font-semibold text-black bg-yellow-400 rounded">Menu</a>
+                    <ul class="hidden mt-2 space-y-1 ml-4" id="menu-submenu">
+                        <li><a href="{{ route('menus.DashboardBestSeller') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Best Seller</a></li>
+                        <li><a href="{{ route('menus.DashboardMainCourse') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Main Course</a></li>
+                        <li><a href="{{ route('menus.DashboardSnack') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Snack</a></li>
+                        <li><a href="{{ route('menus.DashboardDrink') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Drink</a></li>
+                    </ul>
+                </li>
+                
+                <!-- New Menu Item: Blog -->
+                <li class="relative mt-4">
+                    <a href="#" id="blog-toggle" class="block w-full py-2 px-4 font-semibold text-black hover:bg-yellow-400 rounded">Blog</a>
+                    <ul class="hidden mt-2 space-y-1 ml-4" id="blog-submenu">
+                        <li><a href="#" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Event</a></li>
+                        <li><a href="#" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Promo</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+        <div>
+            <li><a href="/logout" class="block w-full py-2 px-4 font-semibold text-black hover:bg-yellow-400 rounded">Logout</a></li>
+        </div>
+    </div>
 
         <!-- Main Content - CRUD Menu -->
         <div class="flex-1 p-8 bg-red-600">
@@ -124,43 +134,51 @@
     </div>
 </div>
 
-    <script>
-        // Toggle Menu Submenu
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            let submenu = document.getElementById('menu-submenu');
-            submenu.classList.toggle('hidden');
-        });
+<script>
+    // Toggle Menu Submenu
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        let submenu = document.getElementById('menu-submenu');
+        submenu.classList.toggle('hidden');
+    });
 
-        document.getElementById('blog-toggle').addEventListener('click', function() {
-            let submenu = document.getElementById('blog-submenu');
-            submenu.classList.toggle('hidden');
-        });
+    // Toggle Blog Submenu
+    document.getElementById('blog-toggle').addEventListener('click', function() {
+        let blogSubmenu = document.getElementById('blog-submenu');
+        blogSubmenu.classList.toggle('hidden');
+    });
 
-        // Buka modal tambah item
-        document.getElementById('openModal').addEventListener('click', function() {
-            document.getElementById('modal').classList.remove('hidden');
-        });
+    // Buka modal tambah item
+    document.getElementById('openModal').addEventListener('click', function() {
+        document.getElementById('modal').classList.remove('hidden');
+    });
 
-        // Tutup modal tambah item
-        document.getElementById('closeModal').addEventListener('click', function() {
-            document.getElementById('modal').classList.add('hidden');
-        });
+    // Tutup modal tambah item
+    document.getElementById('closeModal').addEventListener('click', function() {
+        document.getElementById('modal').classList.add('hidden');
+    });
 
-        // Buka modal edit item dan isi data
-        document.querySelectorAll('.editButton').forEach(button => {
-            button.addEventListener('click', function () {
-                document.getElementById('editName').value = this.getAttribute('data-name');
-                document.getElementById('editCategory').value = this.getAttribute('data-category');
-                document.getElementById('editPrice').value = this.getAttribute('data-price');
-                document.getElementById('editForm').action = `/menus/${this.getAttribute('data-id')}`;
-                document.getElementById('editModal').classList.remove('hidden');
-            });
-        });
+    // Fungsi untuk edit item
+    document.querySelectorAll('.editButton').forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = document.getElementById('editModal');
+            modal.classList.remove('hidden');
 
-        // Tutup modal edit item
-        document.getElementById('closeEditModal').addEventListener('click', function() {
-            document.getElementById('editModal').classList.add('hidden');
+            // Mengatur nilai-nilai input edit dari atribut data button
+            document.getElementById('editName').value = button.getAttribute('data-name');
+            document.getElementById('editCategory').value = button.getAttribute('data-category');
+            document.getElementById('editPrice').value = button.getAttribute('data-price');
+
+            // Mengubah action form sesuai dengan item yang akan diedit
+            const form = document.getElementById('editForm');
+            form.action = `/menus/${button.getAttribute('data-id')}`;
         });
-    </script>
+    });
+
+    // Tutup modal edit item
+    document.getElementById('closeEditModal').addEventListener('click', function() {
+        document.getElementById('editModal').classList.add('hidden');
+    });
+</script>
+
 </body>
 </html>
