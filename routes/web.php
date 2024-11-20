@@ -51,5 +51,3 @@ Route::get('/menu/main-course', [MenuController::class, 'menuMaincourse'])->name
 Route::get('/menu/snack', [MenuController::class, 'menuSnack'])->name('menus.Snack');
 
 Route::get('/menu/drink', [MenuController::class, 'menuDrink'])->name('menus.Drink');
-
-// git baru

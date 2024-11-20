@@ -30,14 +30,6 @@
                     </ul>
                 </li>
                 
-                <!-- New Menu Item: Blog -->
-                <li class="relative mt-4">
-                    <a href="#" id="blog-toggle" class="block w-full py-2 px-4 font-semibold text-black hover:bg-yellow-400 rounded">Blog</a>
-                    <ul class="hidden mt-2 space-y-1 ml-4" id="blog-submenu">
-                        <li><a href="#" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Event</a></li>
-                        <li><a href="#" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Promo</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
         <div>
