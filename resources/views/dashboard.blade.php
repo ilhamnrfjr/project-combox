@@ -8,44 +8,41 @@
 </head>
 <body class="bg-gray-100">
     <!-- Sidebar -->
-    <!-- Sidebar -->
-<div class="flex h-screen">
-    <div class="w-64 bg-gray-50 text-white p-4 flex flex-col justify-between rounded-tr-lg rounded-br-lg">
-        <div class="flex flex-col items-center justify-center">
-            <a href="/dashboard">
-                <img class="w-32 md:w-40" src="{{ asset('img/logo.jpg') }}" alt="Your Company">
-            </a>
-            <div class="mt-6 flex flex-col items-center">
-                <img class="w-24 h-24 rounded-full border-4 border-black" src="{{ asset('img/admin.png') }}" alt="Admin Photo">
-                <p class="mt-2 font-semibold text-black">Shiddiq Harya</p>
+    <div class="flex h-screen">
+        <div class="w-64 bg-gray-50 text-white p-4 flex flex-col justify-between rounded-tr-lg rounded-br-lg">
+            <div class="flex flex-col items-center justify-center">
+                <a href="/dashboard">
+                    <img class="w-32 md:w-40" src="{{ asset('img/logo.jpg') }}" alt="Your Company">
+                </a>
+                <div class="mt-6 flex flex-col items-center">
+                    <img class="w-24 h-24 rounded-full border-4 border-black" src="{{ asset('img/admin.png') }}" alt="Admin Photo">
+                    <p class="mt-2 font-semibold text-black">Shiddiq Harya</p>
+                </div>
+                <ul class="mt-8 w-full">
+                    <li class="relative">
+                        <a href="#" id="menu-toggle" class="block w-full py-2 px-4 font-semibold text-black bg-yellow-400 rounded">Menu</a>
+                        <ul class="hidden mt-2 space-y-1 ml-4" id="menu-submenu">
+                            <li><a href="{{ route('menus.DashboardBestSeller') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Best Seller</a></li>
+                            <li><a href="{{ route('menus.DashboardMainCourse') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Main Course</a></li>
+                            <li><a href="{{ route('menus.DashboardSnack') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Snack</a></li>
+                            <li><a href="{{ route('menus.DashboardDrink') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Drink</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <ul class="mt-8 w-full">
-                <!-- Existing Menu Item: Event -->
-                <li class="relative">
-                    <a href="#" id="menu-toggle" class="block w-full py-2 px-4 font-semibold text-black bg-yellow-400 rounded">Menu</a>
-                    <ul class="hidden mt-2 space-y-1 ml-4" id="menu-submenu">
-                        <li><a href="{{ route('menus.DashboardBestSeller') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Best Seller</a></li>
-                        <li><a href="{{ route('menus.DashboardMainCourse') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Main Course</a></li>
-                        <li><a href="{{ route('menus.DashboardSnack') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Snack</a></li>
-                        <li><a href="{{ route('menus.DashboardDrink') }}" class="block py-1 px-4 font-semibold text-gray-700 hover:bg-yellow-200 rounded">Drink</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div>
+                <li><a href="/logout" class="block w-full py-2 px-4 font-semibold text-black hover:bg-yellow-400 rounded">Logout</a></li>
+            </div>
         </div>
-        <div>
-            <li><a href="/logout" class="block w-full py-2 px-4 font-semibold text-black hover:bg-yellow-400 rounded">Logout</a></li>
-        </div>
-    </div>
 
-
-        <!-- Main Content - CRUD Menu -->
+        <!-- Main Content -->
         <div class="flex-1 p-8 bg-red-600">
             <div class="flex justify-between items-center mb-4">
                 <h1 class="text-3xl font-semibold text-white">Menu</h1>
                 <button id="openModal" class="px-4 py-2 bg-blue-500 text-white rounded">Tambah Item</button>
             </div>
-            
-            <!-- Pop-up Form Tambah Item Menu Baru -->
+
+            <!-- Modal Tambah Item -->
             <div id="modal" class="fixed inset-0 flex justify-center items-center bg-gray-500 bg-opacity-50 hidden">
                 <div class="bg-white p-6 rounded-lg shadow-md w-1/3">
                     <h2 class="text-xl font-medium mb-4">Tambah Item Menu Baru</h2>
@@ -57,7 +54,7 @@
                             <option value="Main Course">Main Course</option>
                             <option value="Snack">Snack</option>
                             <option value="Drink">Drink</option>
-                        </select>                        
+                        </select>
                         <input type="number" name="price" placeholder="Harga" class="w-full p-2 border rounded" required>
                         <input type="file" name="image" accept="image/*" class="w-full p-2 border rounded" required>
                         <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Simpan Item</button>
@@ -66,7 +63,7 @@
                 </div>
             </div>
 
-            <!-- Pop-up Form Edit Item Menu -->
+            <!-- Modal Edit Item -->
             <div id="editModal" class="fixed inset-0 flex justify-center items-center bg-gray-500 bg-opacity-50 hidden">
                 <div class="bg-white p-6 rounded-lg shadow-md w-1/3">
                     <h2 class="text-xl font-medium mb-4">Edit Item Menu</h2>
@@ -79,7 +76,7 @@
                             <option value="Main Course">Main Course</option>
                             <option value="Snack">Snack</option>
                             <option value="Drink">Drink</option>
-                        </select>                        
+                        </select>
                         <input type="number" id="editPrice" name="price" placeholder="Harga" class="w-full p-2 border rounded" required>
                         <input type="file" name="image" accept="image/*" class="w-full p-2 border rounded">
                         <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Update Item</button>
@@ -120,8 +117,6 @@
                         @endforeach
                     </tbody>
                 </table>
-
-                <!-- Pagination Links -->
                 <div class="mt-4">
                     {{ $menus->links() }}
                 </div>
@@ -131,50 +126,36 @@
 
     <!-- Scripts -->
     <script>
-        // Toggle Menu Submenu
         document.getElementById('menu-toggle').addEventListener('click', function() {
             let submenu = document.getElementById('menu-submenu');
             submenu.classList.toggle('hidden');
         });
-    
-        // Toggle Blog Submenu
-        document.getElementById('blog-toggle').addEventListener('click', function() {
-            let blogSubmenu = document.getElementById('blog-submenu');
-            blogSubmenu.classList.toggle('hidden');
-        });
-    
-        // Buka modal tambah item
+
         document.getElementById('openModal').addEventListener('click', function() {
             document.getElementById('modal').classList.remove('hidden');
         });
-    
-        // Tutup modal tambah item
+
         document.getElementById('closeModal').addEventListener('click', function() {
             document.getElementById('modal').classList.add('hidden');
         });
-    
-        // Fungsi untuk edit item
+
         document.querySelectorAll('.editButton').forEach(button => {
             button.addEventListener('click', function() {
                 const modal = document.getElementById('editModal');
                 modal.classList.remove('hidden');
-    
-                // Mengatur nilai-nilai input edit dari atribut data button
+
                 document.getElementById('editName').value = button.getAttribute('data-name');
                 document.getElementById('editCategory').value = button.getAttribute('data-category');
                 document.getElementById('editPrice').value = button.getAttribute('data-price');
-    
-                // Mengubah action form sesuai dengan item yang akan diedit
-                const form = document.getElementById('editForm');
-                form.action = `/menus/${button.getAttribute('data-id')}`;
+
+                const editForm = document.getElementById('editForm');
+                editForm.action = `/menus/${button.getAttribute('data-id')}`;
             });
         });
-    
-        // Tutup modal edit item
+
         document.getElementById('closeEditModal').addEventListener('click', function() {
             document.getElementById('editModal').classList.add('hidden');
         });
     </script>
-    
 </body>
 </html>
