@@ -82,17 +82,14 @@
       <!-- Support -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-10 mt-20 md:mt-8">
         <div class="bg-white shadow-md rounded-md p-4 text-center">
-            <img src="img/icon.png" alt="COMBOX menu item 1" class="object-cover object-center mx-auto"/>
             <h3 class="text-lg font-bold">Pelayanan Ramah</h3>
             <p>Kami menyediakan pelayanan yang ramah dan profesional.</p>
         </div>
         <div class="bg-white shadow-md rounded-md p-4 text-center">
-            <img src="img/icon1.png" alt="COMBOX menu item 2" class="object-cover object-center mx-auto"/>
             <h3 class="text-lg font-bold">Beragam Menu</h3>
             <p>Kami menyediakan menu yang beragam dan lezat.</p>
         </div>
         <div class="bg-white shadow-md rounded-md p-4 text-center">
-            <img src="img/icon2.png" alt="COMBOX menu item 3" class="object-cover object-center mx-auto"/>
             <h3 class="text-lg font-bold">Area Nyaman</h3>
             <p>Nikmati kenyamanan di area kami yang sejuk dan nyaman.</p>
         </div>
