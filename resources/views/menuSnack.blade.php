@@ -133,7 +133,7 @@
       <div class="mt-4 flex justify-center space-x-4">
         <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/combox.pdg?igsh=YWgyOTRmeDExenRs" class="text-white"><i class="fab fa-instagram"></i></a>
         <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
