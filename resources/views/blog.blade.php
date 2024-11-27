@@ -162,10 +162,7 @@
       <div class="h-px w-3/4 mx-auto bg-gray-400 my-4"></div>
       <p class="mt-8 text-xs">© 2024 Combox. All Rights Reserved.</p>
       <div class="mt-4 flex justify-center space-x-4">
-        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/combox.pdg?igsh=YWgyOTRmeDExenRs" class="text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/combox.pdg/" class="text-white"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>

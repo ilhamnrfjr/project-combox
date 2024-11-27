@@ -36,8 +36,8 @@
                 <a href="/" class="text-sm md:text-base hover:text-red-600 ">HOME</a>
                 <a href="/menu" class="text-sm md:text-base hover:text-red-600">MENU</a>
                 <a href="/blog" class="text-sm md:text-base hover:text-red-600">BLOG</a>
-                <a href="/about" class="text-sm md:text-base hover:text-red-600 font-bold">ABOUT</a>
-                <a href="/contact" class="text-sm md:text-base hover:text-red-600">CONTACT</a>
+                <a href="/about" class="text-sm md:text-base hover:text-red-600">ABOUT</a>
+                <a href="/contact" class="text-sm md:text-base hover:text-red-600 font-bold">CONTACT</a>
             </div>
         </div>
     </div>
@@ -112,10 +112,7 @@
       <div class="h-px w-3/4 mx-auto bg-gray-400 my-4"></div>
       <p class="mt-8 text-xs">© 2024 Combox. All Rights Reserved.</p>
       <div class="mt-4 flex justify-center space-x-4">
-        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/combox.pdg?igsh=YWgyOTRmeDExenRs" class="text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/combox.pdg/" class="text-white"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>

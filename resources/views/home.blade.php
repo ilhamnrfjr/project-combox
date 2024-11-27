@@ -115,13 +115,14 @@
                 <div class="relative pl-12 md:pl-0">
                     <div class="md:flex md:items-center">
                         <div class="md:w-1/2 md:pr-8 md:text-right">
-                            <img src="img/photo1.png" alt="Combox Store" class="w-full md:w-64 md:ml-auto rounded-lg shadow-lg mb-4">
+                            <img src="img/photo1.png" alt="Combox Store" class="w-full md:w-64 md:ml-auto rounded-lg mb-4">
                             <h3 class="text-xl font-bold text-red-600 mt-4">Combox Didirikan</h3>
-                            <p class="text-gray-600 text-sm md:text-base">Combox digagas untuk memberikan Japanese Food di Giri Haji Agja Salam dengan skala kecil</p>
+                            <div class="text-red-600 font-bold block md:hidden">Nov 2020</div>
+                            <p class="text-gray-600 text-sm md:text-base text-justify">Combox didirikan pada November 2020 sebagai restoran yang menyajikan hidangan  Japanese Food. Di Gor Haji Agus Salim dengan stand kecil.</p>
                         </div>
                         <div class="absolute left-0 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-8 h-8 bg-red-600 rounded-full border-4 border-white"></div>
                         <div class="mt-4 md:mt-0 md:w-1/2 md:pl-8">
-                            <div class="text-red-600 font-bold">Nov<br>2020</div>
+                            <div class="text-red-600 font-bold hidden md:block">Nov<br>2020</div>
                         </div>
                     </div>
                 </div>
@@ -130,12 +131,13 @@
                 <div class="relative pl-12 md:pl-0">
                     <div class="md:flex md:items-center">
                         <div class="md:w-1/2 md:pr-8 md:text-right">
-                            <div class="text-red-600 font-bold">Jan 2020 -<br>Jan 2022</div>
+                            <div class="text-red-600 font-bold hidden md:block">Jan 2020 -<br>Jan 2022</div>
                         </div>
                         <div class="absolute left-0 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-8 h-8 bg-red-600 rounded-full border-4 border-white"></div>
                         <div class="mt-4 md:mt-0 md:w-1/2 md:pl-8">
-                            <img src="img/photo2.png" alt="Combox Expansion" class="w-full md:w-64 rounded-lg shadow-lg mb-4">
+                            <img src="img/photo2.png" alt="Combox Expansion" class="w-full md:w-64 rounded-lg mb-4">
                             <h3 class="text-xl font-bold text-red-600 mt-4">Memperluas Combox</h3>
+                            <div class="text-red-600 font-bold block md:hidden">Jan 2020 - Jan 2022</div>
                             <p class="text-gray-600 text-sm md:text-base">Combox berkembang yang sebelumnya hanya stand kecil menjadi container box dan bisa drive-in</p>
                         </div>
                     </div>
@@ -145,13 +147,14 @@
                 <div class="relative pl-12 md:pl-0">
                     <div class="md:flex md:items-center">
                         <div class="md:w-1/2 md:pr-8 md:text-right">
-                            <img src="img/photo3.png" alt="Coffee Shop" class="w-full md:w-64 md:ml-auto rounded-lg shadow-lg mb-4">
+                            <img src="img/photo3.png" alt="Coffee Shop" class="w-full md:w-64 md:ml-auto rounded-lg mb-4">
                             <h3 class="text-xl font-bold text-red-600 mt-4">Kerja Sama dengan Coffee Shop Ramunara</h3>
+                            <div class="text-red-600 font-bold block md:hidden">Jan 2022 - Hingga saat ini</div>
                             <p class="text-gray-600 text-sm md:text-base">Pada tahun 2022, Combox menjalin kerja sama dengan coffee shop bernama Ramunara hingga saat ini</p>
                         </div>
                         <div class="absolute left-0 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-8 h-8 bg-red-600 rounded-full border-4 border-white"></div>
                         <div class="mt-4 md:mt-0 md:w-1/2 md:pl-8">
-                            <div class="text-red-600 font-bold">Jan 2022 -<br>Hingga saat ini</div>
+                            <div class="text-red-600 font-bold hidden md:block">Jan 2022 -<br>Hingga saat ini</div>
                         </div>
                     </div>
                 </div>
@@ -230,10 +233,7 @@
       <div class="h-px w-3/4 mx-auto bg-gray-400 my-4"></div>
       <p class="mt-8 text-xs">© 2024 Combox. All Rights Reserved.</p>
       <div class="mt-4 flex justify-center space-x-4">
-        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/combox.pdg?igsh=YWgyOTRmeDExenRs" class="text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/combox.pdg/" class="text-white"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>
