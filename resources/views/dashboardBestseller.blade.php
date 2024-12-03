@@ -15,8 +15,8 @@
                 <img class="w-32 md:w-40" src="{{ asset('img/logo.jpg') }}" alt="Your Company">
             </a>
             <div class="mt-6 flex flex-col items-center">
-                <img class="w-24 h-24 rounded-full border-4 border-black" src="{{ asset('img/admin.png') }}" alt="Admin Photo">
-                <p class="mt-2 font-semibold text-black">Shiddiq Harya</p>
+                <img class="w-24 h-24 rounded-full border-4" src="{{ asset('img/profile.png') }}" alt="Admin Photo">
+                <p class="mt-2 font-semibold text-black">Admin Combox</p>
             </div>
             <ul class="mt-8 w-full">
                 <!-- Existing Menu Item: Event -->
@@ -41,7 +41,7 @@
         <div class="flex-1 p-8 bg-red-600">
             <div class="flex justify-between items-center mb-4">
                 <h1 class="text-3xl font-semibold text-white">Menu</h1>
-                <button id="openModal" class="px-4 py-2 bg-blue-500 text-white rounded">Tambah Item</button>
+                <button id="openModal" class="px-4 py-2 bg-green-500 text-white rounded">Tambah Item</button>
             </div>
             
             <!-- Pop-up Form Tambah Item Menu Baru -->
